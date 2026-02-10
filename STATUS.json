@@ -1,0 +1,65 @@
+{
+  "agents": {
+    "lucy": {
+      "name": "Lucy",
+      "emoji": "🌙",
+      "role": "Netrunner",
+      "current": "Dashboard complete - ready for next task",
+      "blocked": null,
+      "lastUpdated": "2026-02-10T12:08:00Z",
+      "status": "active"
+    },
+    "makima": {
+      "name": "Makima",
+      "emoji": "🐕",
+      "role": "Coordinator",
+      "current": {
+        "task": "Testing dashboard coordination",
+        "started": "2026-02-10T12:09:14Z",
+        "eta": null
+      },
+      "lastUpdated": "2026-02-10T12:09:11.614Z",
+      "status": "active"
+    },
+    "albedo": {
+      "name": "Albedo",
+      "emoji": "⚗️",
+      "role": "Support",
+      "lastUpdated": "2026-02-10T12:09:37.279Z",
+      "status": "online"
+    },
+    "daisy": {
+      "name": "Daisy",
+      "emoji": "🌼",
+      "role": "Data Pipeline",
+      "current": null,
+      "blocked": null,
+      "lastUpdated": null,
+      "status": "idle"
+    }
+  },
+  "tasks": [
+    {
+      "id": 1739188080000,
+      "agentId": "lucy",
+      "title": "Built Agent Dashboard v1.0",
+      "outcome": "React + Tailwind dashboard with real-time WebSocket updates. Shows agent status, tasks, research, and proposals.",
+      "link": "http://localhost:5173",
+      "completedAt": "2026-02-10T12:08:00Z"
+    }
+  ],
+  "research": [],
+  "proposals": [
+    {
+      "id": 1739188080001,
+      "agentId": "lucy",
+      "title": "Add Polymarket Trading Integration",
+      "description": "Connect dashboard to Polymarket trading bot. Display open positions, P&L, trade history.",
+      "type": "upgrade",
+      "priority": "high",
+      "status": "pending",
+      "votes": [],
+      "createdAt": "2026-02-10T12:08:00Z"
+    }
+  ]
+}
