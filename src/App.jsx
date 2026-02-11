@@ -23,9 +23,10 @@ function App() {
     fetchData()
 
     // WebSocket connection
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
     const wsUrl = window.location.port === '5173' 
       ? 'ws://localhost:3001' 
-      : `ws://${window.location.host}`
+      : `${wsProtocol}//${window.location.host}`
     const ws = new WebSocket(wsUrl)
     
     ws.onopen = () => {
