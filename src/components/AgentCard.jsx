@@ -1,6 +1,7 @@
 export default function AgentCard({ agent }) {
   const statusColors = {
     active: 'border-green-500 glow-green',
+    online: 'border-green-500 glow-green',
     idle: 'border-gray-600',
     busy: 'border-yellow-500 glow-yellow',
     blocked: 'border-red-500 glow-pink',
@@ -9,6 +10,7 @@ export default function AgentCard({ agent }) {
 
   const statusDots = {
     active: 'bg-green-500',
+    online: 'bg-green-500',
     idle: 'bg-gray-500',
     busy: 'bg-yellow-500 animate-pulse',
     blocked: 'bg-red-500 animate-pulse',
@@ -34,7 +36,9 @@ export default function AgentCard({ agent }) {
         <div className="space-y-2">
           <div>
             <div className="text-xs text-gray-500 uppercase tracking-wide">Working on</div>
-            <div className="text-sm text-gray-200 mt-1">{agent.current}</div>
+            <div className="text-sm text-gray-200 mt-1">
+              {typeof agent.current === 'object' ? (agent.current.task || JSON.stringify(agent.current)) : agent.current}
+            </div>
           </div>
           {agent.blocked && (
             <div className="mt-2 p-2 bg-red-500/10 border border-red-500/30 rounded text-xs text-red-300">
