@@ -28,10 +28,10 @@
       "lastUpdated": "2026-02-10T12:09:37.279Z",
       "status": "online"
     },
-    "daisy": {
-      "name": "Daisy",
-      "emoji": "🌼",
-      "role": "Data Pipeline",
+    "sakura": {
+      "name": "Sakura",
+      "emoji": "🌸",
+      "role": "Research",
       "current": null,
       "blocked": null,
       "lastUpdated": null,
